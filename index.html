@@ -171,17 +171,24 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, 'S
   .header, .nav-tabs, .main, #mainApp, #navTabs, #mainContent, .safe-bottom { display: none !important; }
   #printQuote { display: block !important; position: static !important; }
   @page { margin: 0.4in; size: letter portrait; }
-  #pq-quote-page { page-break-after: always; font-size: 11px !important; }
-  #pq-quote-page .pq-scope { font-size: 10.5px !important; line-height: 1.4 !important; padding: 10px !important; margin-bottom: 8px !important; }
-  #pq-quote-page .pq-header { padding-bottom: 8px !important; margin-bottom: 10px !important; }
-  #pq-quote-page .pq-grid { gap: 6px !important; margin-bottom: 8px !important; }
-  #pq-quote-page .pq-valid { padding: 5px 12px !important; margin-bottom: 8px !important; font-size: 10.5px !important; }
-  #pq-quote-page .pq-price-box { padding: 10px 18px !important; margin: 6px 0 !important; }
-  #pq-quote-page .pq-price-box .pamount { font-size: 30px !important; }
-  #pq-quote-page .pq-signature { margin-top: 6px !important; }
-  #pq-quote-page .pq-footer { margin-top: 6px !important; padding-top: 5px !important; }
-  #pq-quote-page .pq-addl table { font-size: 10.5px !important; }
-  #pq-quote-page #pq-subtotal-wrap { font-size: 10.5px !important; }
+  #pq-quote-page { page-break-after: always; font-size: 10.5px !important; }
+  #pq-quote-page .pq-scope { font-size: 10px !important; line-height: 1.38 !important; padding: 8px 10px !important; margin-bottom: 6px !important; }
+  #pq-quote-page .pq-header { padding-bottom: 6px !important; margin-bottom: 8px !important; }
+  #pq-quote-page .pq-grid { gap: 5px !important; margin-bottom: 6px !important; }
+  #pq-quote-page .pq-info-box { padding: 7px 10px !important; }
+  #pq-quote-page .pq-info-box .val { font-size: 12px !important; }
+  #pq-quote-page .pq-valid { padding: 4px 10px !important; margin-bottom: 6px !important; font-size: 10px !important; }
+  #pq-quote-page .pq-price-box { padding: 8px 16px !important; margin: 5px 0 !important; }
+  #pq-quote-page .pq-price-box .pamount { font-size: 28px !important; }
+  #pq-quote-page .pq-price-box .plabel { font-size: 10.5px !important; }
+  #pq-quote-page .pq-signature { margin-top: 5px !important; gap: 20px !important; }
+  #pq-quote-page .pq-sig-line { margin-top: 22px !important; }
+  #pq-quote-page .pq-footer { margin-top: 5px !important; padding-top: 4px !important; font-size: 9px !important; }
+  #pq-quote-page .pq-addl table { font-size: 10px !important; }
+  #pq-quote-page .pq-addl th, #pq-quote-page .pq-addl td { padding: 4px 8px !important; }
+  #pq-quote-page #pq-subtotal-wrap { font-size: 10px !important; }
+  #pq-quote-page #pq-subtotal-wrap td { padding: 3px 6px !important; }
+  #pq-quote-page .pq-title { font-size: 15px !important; margin-bottom: 6px !important; }
   #pq-comparison-page { page-break-after: always; page-break-inside: avoid; }
   #pq-payment-page { page-break-after: always; page-break-inside: avoid; }
   #pq-tc-page { page-break-after: always; }
@@ -686,7 +693,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, 'S
 
 <!-- PRINT TEMPLATE -->
 <div id="printQuote">
-  <div id="pq-quote-page" style="padding:24px 36px; font-family:Arial,sans-serif;">
+  <div id="pq-quote-page" style="padding:18px 32px; font-family:Arial,sans-serif;">
     <div class="pq-header">
       <div>
         <div style="font-weight:900; font-size:22px; color:#1a3a6a; line-height:1.2; font-family:Arial Black,Arial;">TROPHY ROOFING</div>
@@ -742,7 +749,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, 'S
       <div><div class="pq-sig-line">Customer Signature &amp; Date</div></div>
       <div><div class="pq-sig-line">Trophy Roofing Representative: <span id="pq-rep"></span></div></div>
     </div>
-    <div style="display:flex; gap:12px; margin-top:8px; justify-content:center;">
+    <div style="display:flex; gap:10px; margin-top:5px; justify-content:center;">
       <a href="https://share.google/WiK8wyrwso2HOJzHS" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f4ff; border:1px solid #c7d7f5; border-radius:8px; padding:6px 14px; text-decoration:none; color:#1a3a6a; font-size:11px; font-weight:600;">&#x2B50; See Our Google Reviews</a>
       <a href="https://app.companycam.com/galleries/1h59vqUS" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f4ff; border:1px solid #c7d7f5; border-radius:8px; padding:6px 14px; text-decoration:none; color:#1a3a6a; font-size:11px; font-weight:600;">&#x1F4F7; View Our Project Gallery</a>
     </div>
